@@ -1,0 +1,25 @@
+{
+  "name": "cli-practice",
+  "version": "1.0.0",
+  "description": "Created simple cli tool to practive TS",
+  "main": "./src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farid-temuri-lofty/cli-practice.git"
+  },
+  "author": "Farid Temuri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/farid-temuri-lofty/cli-practice/issues"
+  },
+  "homepage": "https://github.com/farid-temuri-lofty/cli-practice#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  }
+}
