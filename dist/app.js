@@ -1,4 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const test_1 = require("./test");
-(0, test_1.test)();
+exports.App = void 0;
+class App {
+    run() {
+        console.log('Up and running.');
+    }
+}
+exports.App = App;
+const app = new App();
+app.run();
