@@ -1,6 +1,8 @@
+import { PromptService } from './core/prompt/prompt.service';
 export class App {
-	run() {
-		console.log('Up and running.')
+	async run() {
+		const data = await new PromptService().prompt<number>( 'How many times did you lied?', 'number' )
+		console.log(data);
 	}
 }
 
