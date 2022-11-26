@@ -16,10 +16,10 @@ export default class FfmpegExecutor extends CommandExecutor<IFfmpegExecutorUserI
 	}
 	protected async prompt(): Promise<IFfmpegExecutorUserInput> {
 		const res:IFfmpegExecutorUserInput = {
-			filePath: await this.promptService.prompt( 'File to process', 'input' ),
-			videoWidth:await  this.promptService.prompt( 'File to process', 'number' ),
-			videoHeight:await  this.promptService.prompt( 'File to process', 'number' ),
-			name: await this.promptService.prompt( 'File to process','input' ),
+			filePath: await this.promptService.prompt( 'Path to file', 'input' ),
+			videoWidth:await  this.promptService.prompt( 'Video width', 'number' ),
+			videoHeight:await  this.promptService.prompt( 'Video height', 'number' ),
+			name: await this.promptService.prompt( 'Output file name','input' ),
 		}
 		return res
 	}

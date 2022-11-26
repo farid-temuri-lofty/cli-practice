@@ -32,4 +32,3 @@ const bilda = new FfmpegBuilder()
 	.setInputPath( '/myLib' )
 	.setVideoResolution( 1920, 1080 )
 	.setOutputPath( '/myOutDir' ).build()
-console.log(bilda);

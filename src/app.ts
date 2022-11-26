@@ -1,8 +1,9 @@
+import { ConsoleLogger } from './out/console-logger/console-logger';
+import FfmpegExecutor from './commands/ffmpeg/ffmpeg.executor';
 import { PromptService } from './core/prompt/prompt.service';
 export class App {
 	async run() {
-		const data = await new PromptService().prompt<number>( 'How many times did you lied?', 'number' )
-		console.log(data);
+		const ffmepegExecutor = new FfmpegExecutor(ConsoleLogger.getInstance()).execute()
 	}
 }
 
