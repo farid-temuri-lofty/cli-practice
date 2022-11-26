@@ -24,7 +24,7 @@ class FfmpegBuilder {
         this.options.unshift('-i', this.inputPath);
         this.options.push(this.videoResolution);
         this.options.push(this.outputPath);
-        return this.options.join(' ');
+        return this.options;
     }
 }
 exports.FfmpegBuilder = FfmpegBuilder;

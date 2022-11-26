@@ -17,14 +17,14 @@ export class FfmpegBuilder {
 		this.videoResolution = `${ width }x${ height }`
 		return this
 	}
-	build() {
+	build():string[] {
 		if ( !this.inputPath || !this.outputPath || !this.videoResolution ) {
 			throw new Error(`You have to define inputPath, outputPath and videoResolution`)
 		}
 		this.options.unshift('-i', this.inputPath)
 		this.options.push( this.videoResolution )
 		this.options.push( this.outputPath )
-		return this.options.join(' ')
+		return this.options
 	}
 }
 

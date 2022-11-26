@@ -2,7 +2,7 @@ import { IStreamLogger } from './../handlers/stream-logger.interface';
 import { ICommandExec } from './command.types';
 import { ChildProcessWithoutNullStreams } from 'child_process';
 
-abstract class CommandExecutor<UserInput> {
+export abstract class CommandExecutor<UserInput> {
 	constructor (
 		private logger:IStreamLogger
 	) {}
